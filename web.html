@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+
+    <link rel="stylesheet" href="web.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="navlink">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Tours</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>About</li>
+            <li class="ctn"><a href="#"></a>Contact</li>
+        </ul>
+    </nav>
+    <header>
+        <div class="headercontent">
+            <h2>Explore The World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFULL GIFT </h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+    <section class="event">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="container">
+            <!-- Left Side Card -->
+            <div class="card">
+                <img src="walkholi.jpg" alt="Nature">
+                <div class="content">
+                    <h2>Beautiful Nature</h2>
+                    <p>
+                        Explore the beauty of nature with amazing landscapes,
+                        mountains, rivers, and peaceful environments.
+                    </p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+            <!-- Right Side Card -->
+            <div class="card">
+                <img src="high.jpg">
+                <div class="content">
+                    <h2>Everest Camp Treak</h2>
+                    <p>
+                        Discover modern city life with stunning architecture,
+                        bright lights, and urban adventures.
+                    </p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="explore">
+        <div class="explorecontent">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <P>Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit
+                . Magni, Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit
+                . Magni,
+                c</P>
+            <a href="#" class="ctn"> Learn More</a>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="containers">
+
+        <!-- LEFT CONTENT -->
+        <div class="left">
+            <h1>UP COMING Tours & DESTINATION</h1>
+
+            <p>
+                Beautiful responsive section with heading text,
+                learn more button and 4 equal square images.
+            </p>
+
+            <a href="#" class="btnn">Learn More</a>
+        </div>
+
+        <!-- RIGHT IMAGES -->
+        <div class="right">
+            <img src="https://picsum.photos/id/1015/300/300" alt="">
+            <img src="https://picsum.photos/id/1016/300/300" alt="">
+            <img src="https://picsum.photos/id/1018/300/300" alt="">
+            <img src="https://picsum.photos/id/1020/300/300" alt="">
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-container">
+
+            <!-- ABOUT -->
+            <div class="footer-box">
+                <h2>CreativeWeb</h2>
+
+                <p>
+                    Build modern and responsive websites with elegant UI designs using HTML, CSS and JavaScript.
+                </p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="footer-box">
+                <h2>Quick Links</h2>
+
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- SERVICES -->
+            <div class="footer-box">
+                <h2>Services</h2>
+
+                <ul class="footer-links">
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Frontend Development</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                    <li><a href="#">SEO Optimization</a></li>
+                </ul>
+            </div>
+
+            <!-- NEWSLETTER -->
+            <div class="footer-box">
+                <h2>Newsletter</h2>
+
+                <p>Subscribe for latest updates and creative ideas.</p>
+
+                <div class="newsletter">
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <button id="subscribeBtn">Subscribe</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+            © 2026 CreativeWeb | All Rights Reserved
+        </div>
+
+    </footer>
+
+    <!-- SCROLL BUTTON -->
+    <button class="scroll-top" id="scrollBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Subscribe Button
+        const subscribeBtn = document.getElementById("subscribeBtn");
+
+        subscribeBtn.addEventListener("click", () => {
+            const email = document.getElementById("email").value;
+
+            if (email === "") {
+                alert("Please enter your email!");
+            } else {
+                alert("Thanks for subscribing!");
+            }
+        });
+
+        // Scroll To Top Button
+        const scrollBtn = document.getElementById("scrollBtn");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                scrollBtn.style.display = "block";
+            } else {
+                scrollBtn.style.display = "none";
+            }
+        });
+
+        scrollBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+
+    <script>
+
+        const buttons = document.querySelectorAll(".btn");
+        buttons.forEach(button => {
+            button.addEventListener("click", function (e) {
+                e.preventDefault();
+                alert("Learn More button clicked!");
+            });
+        });
+
+
+        // Simple JavaScript Example
+        const button = document.querySelector(".btnn");
+        T//askController =button document .query slector addEventListener
+        button.addEventListener("click", () => {
+            alert("Learn More button clicked!");
+        });
+    </script>
+
+
+    <x></x>/* they inract the user of the com <puter></puter>/
+</body>
+
+</html>
